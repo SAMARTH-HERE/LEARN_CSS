@@ -1,70 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- TODO
-1. Make both paragraph elements wrap around the image.
-2. Use Float to move the cat div to the left and the dog div to the right.
-3. Use clear to make the footer go below both the cat and dog div. -->
-
 <head>
   <meta charset="UTF-8">
-  <title>CSS Float</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Column Layout Methods</title>
   <style>
-    div {
-      display: inline-block;
-      width: 40%;
-    }
-
     p {
-      font-size: 2em;
-
+      padding: 0;
+      margin: 0;
+      font-weight: 700;
     }
 
-    img{
-      float: left;
-    }
-    .cat {
-      background-color: aquamarine;
-      float: left;
-      
+    li {
+      list-style: none;
     }
 
-    .dog {
-      background-color: coral; 
-      float: right; 
+    .container {
+      padding: 10px;
+      background-color: gold;
     }
 
-    footer {
-      text-align: center;
-      background-color: blueviolet;
-      clear: both ;
-    }
   </style>
 </head>
 
 <body>
-  <div class="cat">
-    <h2>CatCSS</h2>
+  <div class="container">
+    <p>Page Layout Methods</p>
 
-    <img src="cat.jpeg" alt="cat in a box" />
-    <p class="first-paragraph">Nap all day cat dog hate mouse eat string barf pillow no baths hate everything but kitty
-      poochy. Sleep on keyboard
-      toy
-      mouse squeak roll over. Mesmerizing birds. Poop on grasses licks paws destroy couch intently sniff hand. The dog
-      smells
-      bad gnaw.</p>
-  </div>
-  <div class="dog">
-    <h2>DogCSS</h2>
-    <img src="dog.jpeg" alt="dogs in a box" />
-    <p class="second-paragraph">Heckin good boys and girls long woofer big ol wow very biscit long woofer heck what a
-      nice
-      floof, long doggo noodle
-      horse vvv very taste wow. Very taste wow many pats aqua doggo he made many woofs pupperino, puggo doing me a
-      frighten.</p>
-  </div>
+    <li><a href="./html-table.html">HTML Table</a></li>
+    <li><a href="./inline-block.html">Inline-Block</li>
+    <li><a href="./absolute-position.html">Absolute Positioning</li>
+    <li><a href="./float.html">Float</li>
+    <li><a href="./flex.html">Flexbox</li>
 
-  <footer>Copyright. This is the footer</footer>
+  </div>
 </body>
 
 </html>
