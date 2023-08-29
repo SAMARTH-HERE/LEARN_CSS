@@ -1,21 +1,26 @@
-div{
-    height: 200px;
-    width: 200px;
-}
-#first{
-    background-color: aqua;
-    padding: 20px;
-    border: 10px solid black;
+.container{
+    display: flex;
+    justify-content: center;
+  
+    gap: 20px;
 }
 
-#second{
-    background-color: yellow;
-    border:solid black;
-    border-width: 20px 10px;
-    margin-left: 260px;
+.container > *{
+    background-color: beige;
+    flex-basis: 400px;
 }
-#third{
-    background-color: brown;
-    border: 10px solid black;
-    margin-left: 40px;
+
+.plan-button{
+    padding: 10px;
+    background-color: #ff6600;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+}
+
+@media(max-width:1250px){
+    .container{
+        flex-direction: column;
+        height: 100%;
+    }
 }
